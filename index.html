@@ -65,7 +65,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--wine);border-bottom:1px s
 /* ABOUT */
 .about{display:grid;grid-template-columns:1fr 1fr;background:#fff;}
 .about-img{position:relative;overflow:hidden;min-height:420px;}
-.about-img-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+.about-img-bg{position:absolute;inset:0;width:100%;height:100%;background:url('https://images.unsplash.com/photo-1521791055366-0d553872952f?w=800&q=80') center/cover no-repeat;}
 .about-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,var(--wine-dark) 0%,transparent 50%);}
 .about-img-tag{position:absolute;bottom:28px;left:28px;right:28px;}
 .about-img-tag p{font-family:'Cormorant Garamond',serif;font-size:14px;color:rgba(255,255,255,0.7);font-style:italic;line-height:1.5;}
@@ -245,7 +245,7 @@ footer{background:var(--wine-dark);padding:28px 60px;display:flex;justify-conten
 
 <section class="about" id="sobre">
   <div class="about-img">
-    <img class="about-img-bg" src="https://images.unsplash.com/photo-1521791055366-0d553872952f?w=800&q=80" alt="Escritório de advocacia" loading="eager" />
+    <div class="about-img-bg"></div>
     <div class="about-img-overlay"></div>
     <div class="about-img-tag"><p>"Mais do que representação legal — um atendimento qualificado e humano."</p></div>
   </div>
